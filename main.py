@@ -1,7 +1,9 @@
 from tkinter import*
 obj1=Tk()
-obj1.title('product of numbers')
+obj1.title('getting started with widgets')
 obj1.geometry("400x300")
+
+lbl=Label(text='product of numbers',fg='black',bg='blue')
 
 lbl1=Label(text='enter num 1',fg='black',bg='blue',width=300)
 entry1=Entry() 
@@ -23,6 +25,7 @@ def product():
 
 btn=Button(obj1,text='multiply',fg='white',bg='blue',command=product)
 
+lbl.pack()
 lbl1.pack()
 entry1.pack()
 lbl2.pack()
